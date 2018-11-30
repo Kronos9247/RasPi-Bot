@@ -11,7 +11,7 @@ Manager.use(client);
 
 const deserializer = require('./lib/deserializer');
 var ledsUsage = function (msg) {
-	msg.reply(`Usage \`\`\`${config.prefix} leds <id> (on/off)\n${config.prefix} leds all (on/off)\n\`\`\``);
+	msg.reply(`Usage \`\`\`${config.prefix} leds <id> (on/off)\n${config.prefix} leds all (on/off)\n${config.prefix} leds list\`\`\``);
 }
 Manager.on('leds', function (cmd, args, msg) {
 	if (args.length == 1) {
@@ -54,4 +54,4 @@ client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.login('bot-token');
+client.login(config.token);

@@ -4,5 +4,6 @@ module.exports = {
         '2': { pin: 27 },
         '3': { pin: 22 }
     },
-    prefix: ':raspi'
+    prefix: ':raspi',
+    token: 'bot-token'
 }
